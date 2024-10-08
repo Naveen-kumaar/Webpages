@@ -67,7 +67,7 @@ visibility: visible;
     background-repeat: no-repeat;
     background-position-x:-5rem ;
     z-index: 1;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .hero-section-overlay{
     top:0;
