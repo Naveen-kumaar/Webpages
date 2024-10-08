@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css global variables */
+:root{
+    --bg-color:black;
+    --text-color:white;
+    --blue-color:rgb(46, 138, 243);
+    
+    --h1-font:7rem;
+    --h2-font:3.2rem;
+    --h3-font:2.8rem;
+    --h4-font:2.4rem;
+    --h5-font:1.8rem;
+    --p-font:1.5rem;
+    --font-20px:2rem;
+
+}
+/* body tag */
+.dark-black{
+    background-color: var(--bg-color);
+}
+/* section */
+.nav-link{
+    font-size:var(--p-font);
+    padding: 1rem 0.2rem;
+    position:relative;
+
+}
+.nav-link::before{
+    content: '';
+    position:absolute;
+    width: 0%;
+    height: 0.15rem;
+    background-color: var(--text-color);
+    bottom:0.2rem;
+    left:0;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,.nav-link.active::before{
+width:100%;
+visibility: visible;
+}
+.navbar-toggler .fa-solid.fa-bars{
+    font-size:2rem;
+}
