@@ -1,0 +1,12 @@
+.container-fluid .navbar-toggler .navbar-toggler-icon{
+    color:black
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+color: white;
+}
